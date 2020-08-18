@@ -22,3 +22,7 @@ The feature that mainly used in this repository is **Transaction Details** as we
 ## Methodology
 
 1. Determining the number of topics (categories) using LDA.
+
+## References
+
+1. [LDA tutorial](http://chdoig.github.io/pytexas2015-topic-modeling/#/3/4)
