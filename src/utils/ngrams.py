@@ -14,6 +14,7 @@ def get_frequency_distribution(docs, n=1):
         nltk.FreqDist
     """
     ngram_freq_dist = FreqDist()
+
     for doc in docs:
         if isinstance(doc, str):
             tokens = word_tokenize(doc)
@@ -21,3 +22,11 @@ def get_frequency_distribution(docs, n=1):
             ngram_freq_dist.update(ngram_tokens)
 
     return ngram_freq_dist
+
+
+def convert_ngrams_docs(docs, n=2):
+    ngrams_docs = []
+    for doc in docs:
+        ngrams_docs.append(' '.join(["_".join(w)
+                                     for w in ngrams(word_tokenize(doc), 2)]))
+    return ngrams_docs

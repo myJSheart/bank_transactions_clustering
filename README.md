@@ -1,10 +1,10 @@
-# Clustering Bank Transactions using text descriptions
+# Clustering Bank Transactions using Text Descriptions
 
 ## Introduction
 
 This work is inspired by Ravindra Reddy Tamma's article named [Real-World Machine Learning Case Study: Clustering Transactions Based on Text Descriptions](https://www.analyticsvidhya.com/blog/2020/07/machine-learning-study-clustering-transactions-text-descriptions/). In this repository, I will replicate the method described in the article on a [Kaggle data set provided by Apoorv Patne](https://www.kaggle.com/apoorvwatsky/bank-transaction-data).
 
-## Dataset Analysis
+## Dataset
 
 Features included in this dataset are shown as below:
 
@@ -26,3 +26,4 @@ The feature that mainly used in this repository is **Transaction Details** as we
 ## References
 
 1. [LDA tutorial](http://chdoig.github.io/pytexas2015-topic-modeling/#/3/4)
+
