@@ -23,15 +23,15 @@ The feature that mainly used in this repository is **Transaction Details** as we
 
 We begin with analysing the dataset. This step can help us recognize frequent words in this dataset and filter some of them as stop words. We get the frequency distribution of unigram, bigram and trigram terms, and draw word cloud graphs of them as follows:
 
-![Unigram Word Cloud](/Users/chenxuzhao/Github/bank_transactions_clustering/data/results/1-gram-word-cloud-raw.jpg)
+![Unigram Word Cloud](./data/results/1-gram-word-cloud-raw.jpg)
 
 <center>Fig-1 Unigram Word Cloud</center>
 
-![Bingram Frequency Distribution](/Users/chenxuzhao/Github/bank_transactions_clustering/data/results/2-gram-word-cloud-raw.jpg)
+![Bingram Frequency Distribution](./data/results/2-gram-word-cloud-raw.jpg)
 
 <center>Fig-2 Bigram Word Cloud</center>
 
-![Trigram Word Cloud](/Users/chenxuzhao/Github/bank_transactions_clustering/data/results/3-gram-word-cloud-raw.jpg)
+![Trigram Word Cloud](./data/results/3-gram-word-cloud-raw.jpg)
 
 <center>Fig-3 Trigram Word Cloud</center>
 
@@ -45,15 +45,15 @@ Preprocessing includes removing stop words, punctuations and numbers. The set of
 
 After finishing the preprocessing, the step comes to identifying the number of categories. We use a topic modelling algorithm named [LDA](https://www.jmlr.org/papers/v3/blei03a) to assign every item (document) to a category. LDA is an unsupervised learning algorithm and a generative probabilistic model which can group text corpus into several categories. However, this algorithm requires the number of categories as input. To determine the number of categories reasonably, we also need topic coherence score to evaluate it. The topic coherence takes the first **n** words in each category to measure the similarity between them. We test the number of categories from 1 to 20 and take the number with the largest topic coherence score as the final number. Similar to the dataset analysis step, we also apply these methods on unigram, bigram and trigram. The results are as follows:
 
-![](/Users/chenxuzhao/Github/bank_transactions_clustering/data/results/Unigram Topic Frequency.png)
+![](./data/results/Unigram Topic Frequency.png)
 
 <center>Unigram Topic Coherence Score of the Number of Topics</center>
 
-![](/Users/chenxuzhao/Github/bank_transactions_clustering/data/results/Bingram Topic Frequency.png)
+![](./data/results/Bingram Topic Frequency.png)
 
 <center>Bigram Topic Coherence Score of the Number of Topics</center>
 
-![](/Users/chenxuzhao/Github/bank_transactions_clustering/data/results/Trigram Topic Frequency.png)
+![](./data/results/Trigram Topic Frequency.png)
 
 <center>Trigram Topic Coherence Score of the Number of Topics</center>
 
@@ -65,7 +65,7 @@ We use K-Means as the clustering algorithm and TF-IDF to vectorize the n-gram te
 
 ### 9 Topics and Unigram
 
-![](/Users/chenxuzhao/Github/bank_transactions_clustering/data/results/9 topics unigram.png)
+![](./data/results/9 topics unigram.png)
 
 <center>Count of Items in 9 Topics and Unigram</center>
 
