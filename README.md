@@ -45,15 +45,15 @@ Preprocessing includes removing stop words, punctuations and numbers. The set of
 
 After finishing the preprocessing, the step comes to identifying the number of categories. We use a topic modelling algorithm named [LDA](https://www.jmlr.org/papers/v3/blei03a) to assign every item (document) to a category. LDA is an unsupervised learning algorithm and a generative probabilistic model which can group text corpus into several categories. However, this algorithm requires the number of categories as input. To determine the number of categories reasonably, we also need topic coherence score to evaluate it. The topic coherence takes the first **n** words in each category to measure the similarity between them. We test the number of categories from 1 to 20 and take the number with the largest topic coherence score as the final number. Similar to the dataset analysis step, we also apply these methods on unigram, bigram and trigram. The results are as follows:
 
-![](./data/results/Unigram Topic Frequency.png)
+![](./data/results/Unigram-Topic-Frequency.png)
 
 <center>Unigram Topic Coherence Score of the Number of Topics</center>
 
-![](./data/results/Bingram Topic Frequency.png)
+![](./data/results/Bingram-Topic-Frequency.png)
 
 <center>Bigram Topic Coherence Score of the Number of Topics</center>
 
-![](./data/results/Trigram Topic Frequency.png)
+![](./data/results/Trigram-Topic-Frequency.png)
 
 <center>Trigram Topic Coherence Score of the Number of Topics</center>
 
@@ -65,7 +65,7 @@ We use K-Means as the clustering algorithm and TF-IDF to vectorize the n-gram te
 
 ### 9 Topics and Unigram
 
-![](./data/results/9 topics unigram.png)
+![](./data/results/9-topics-unigram.png)
 
 <center>Count of Items in 9 Topics and Unigram</center>
 
