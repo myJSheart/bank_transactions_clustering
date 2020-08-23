@@ -5,7 +5,7 @@ import string
 
 # In bank statements, "transfer" can be considered as a stop word
 stop_words = list(stopwords.words('english'))
-stop_words.extend(['transfer', 'trf'])
+stop_words.extend(['transfe', 'trf', 'transfer'])
 
 
 def remove_stop_words(text, stop_words=stop_words):

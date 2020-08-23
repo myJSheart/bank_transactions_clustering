@@ -28,5 +28,5 @@ def convert_ngrams_docs(docs, n=2):
     ngrams_docs = []
     for doc in docs:
         ngrams_docs.append(' '.join(["_".join(w)
-                                     for w in ngrams(word_tokenize(doc), 2)]))
+                                     for w in ngrams(word_tokenize(doc), n)]))
     return ngrams_docs
