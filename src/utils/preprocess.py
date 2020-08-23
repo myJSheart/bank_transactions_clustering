@@ -1,6 +1,6 @@
 import re
 from nltk.corpus import stopwords
-from nltk.tokenize import word_tokenize, RegexpTokenizer
+from nltk.tokenize import word_tokenize
 import string
 
 # In bank statements, "transfer" can be considered as a stop word
